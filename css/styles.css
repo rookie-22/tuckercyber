@@ -345,6 +345,7 @@ p {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
 }
 
 .grid-asset:hover {
@@ -360,7 +361,7 @@ p {
 }
 
 .grid-image {
-  margin-bottom: var(--spacing-sm);
+  margin: 0 auto var(--spacing-sm);
 }
 
 .default-paragraph {
