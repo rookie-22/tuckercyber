@@ -39,7 +39,7 @@ python -m http.server 5000
 ```
 
 ## Recent Changes
-- **2025-10-28**: Complete website rebuild
+- **2025-10-28**: Complete website rebuild and refinements
   - Created clean CSS file (styles.css) replacing 15,612 lines of Webflow CSS
   - Rebuilt all HTML pages with semantic markup
   - Removed all Webflow data attributes and overhead
@@ -48,7 +48,15 @@ python -m http.server 5000
   - Removed Facebook Pixel, Google Tag Manager, and Google Ads tracking
   - Kept only essential Google Analytics
   - Added mobile menu functionality
-  - Tested and verified all pages working correctly
+  - Removed "Schedule your Free Consultation" button from homepage hero
+  - Replaced FORTINET and SANS Institute logos with Stanford University logo
+  - Applied color correction to all team photos (reduced overexposure)
+  - Resized all logos to 64px height for consistency
+  - Reorganized logo strip into 3-4 logos per row in specific order
+  - Removed ™ from "Meet TUCKER Cybersecurity" heading
+  - Made myths/misconceptions section more compact with black text
+  - Fixed responsive layout on team page - Steve Tucker photo now stacks below text on mobile
+  - Tested and verified all pages working correctly across desktop and mobile
 
 ## Contact Information
 All contact links and forms now point to: **stevenstucker@gmail.com**

@@ -55,7 +55,7 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="section" style="padding: 4rem 0; background: linear-gradient(to right, #f9fafb 50%, white 50%);">
+  <section class="section" style="padding: 4rem 0; background: white;">
     <div class="container-default">
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
         <div>
@@ -73,23 +73,35 @@
       </div>
     </div>
   </section>
+  
+  <style>
+    @media (max-width: 768px) {
+      section:first-of-type .container-default > div {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
 
   <!-- Logo Strip -->
   <section class="section" style="background: white; padding: 3rem 0;">
     <div class="container-default">
-      <div class="logo-strip">
-        <img src="images/TCC12.png" alt="The Atari logo">
+      <div class="logo-strip" style="max-width: 600px; margin: 0 auto;">
         <img src="images/TCC11.png" alt="The Apple Logo">
-        <img src="images/TCC2.png" alt="The Berkeley Law logo">
+        <img src="images/TCC12.png" alt="The Atari logo">
         <img src="images/TCC9.png" alt="The Sony logo">
-        <img src="images/homney.png" alt="The Honeywell Logo">
-        <img src="images/TCC3.png" alt="The Harvard University logo">
       </div>
-      <div class="logo-strip">
+      <div class="logo-strip" style="max-width: 600px; margin: 0 auto;">
         <img src="images/TCC8.png" alt="The AT&T logo">
+        <img src="images/homney.png" alt="The Honeywell Logo">
         <img src="images/TCC4.png" alt="The Georgia Institute of Technology logo">
+      </div>
+      <div class="logo-strip" style="max-width: 600px; margin: 0 auto;">
+        <img src="images/TCC3.png" alt="The Harvard University logo">
         <img src="images/TCC-stanford.png" alt="The Stanford University logo">
         <img src="images/TCC5.png" alt="The University of North Carolina Charlotte logo">
+      </div>
+      <div class="logo-strip" style="max-width: 600px; margin: 0 auto;">
+        <img src="images/TCC2.png" alt="The Berkeley Law logo">
         <img src="images/TCC6.png" alt="The Clemson University logo">
       </div>
     </div>
@@ -100,7 +112,7 @@
     <div class="container-default">
       <div class="text-center" style="max-width: 800px; margin: 0 auto 3rem;">
         <div style="font-size: 0.875rem; color: var(--primary-blue); font-weight: 700; text-transform: uppercase; margin-bottom: 0.5rem;">Team</div>
-        <h2 class="heading-h2-size">Meet TUCKER Cybersecurity™</h2>
+        <h2 class="heading-h2-size">Meet TUCKER Cybersecurity</h2>
         <p class="default-paragraph">
           Our Team Focuses on Developing Personalized, Effective Cyber Solutions to Keep Your Business Ahead of Threats and Compliant with Evolving Regulatory Standards.
         </p>
