@@ -1,7 +1,7 @@
 # Tucker Cybersecurity Website
 
 ## Overview
-This is a static HTML website for Tucker Cybersecurity, a company offering AI-powered cybersecurity solutions and managed security services. The site was exported from Webflow and is served as a static site using Python's built-in HTTP server.
+This is a clean, modern website for Tucker Cybersecurity, a company offering AI-powered cybersecurity solutions and managed security services. The site has been completely rebuilt with clean, semantic HTML and CSS, removing all Webflow overhead while maintaining identical visual styling.
 
 ## Project Structure
 ```
@@ -9,36 +9,70 @@ This is a static HTML website for Tucker Cybersecurity, a company offering AI-po
 ├── index.html           # Main homepage
 ├── team.html           # Team page
 ├── contact.html        # Contact page
-├── css/                # Stylesheets
-│   ├── normalize.css
-│   ├── webflow.css
-│   └── tucker-cybersecurity.webflow.css
-├── js/                 # JavaScript files
-│   └── webflow.js
-└── images/             # Image assets
+├── css/
+│   └── styles.css      # Clean, component-based CSS (~800 lines)
+├── js/                 # JavaScript files (minimal)
+├── images/             # Image assets
+└── replit.md          # This file
 ```
 
 ## Technology Stack
-- Pure HTML/CSS/JavaScript (no build system required)
-- Webflow-generated static site
-- Python HTTP server for local development
+- **Pure HTML/CSS/JavaScript** (no build system required)
+- **Clean, semantic HTML5** markup
+- **Component-based CSS** with design tokens
+- **Python HTTP server** for local development
+- **Google Analytics** for tracking (minimal third-party scripts)
+
+## Key Features
+- ✅ Clean codebase - removed 15,000+ lines of Webflow bloat
+- ✅ Semantic HTML5 structure
+- ✅ Responsive design with mobile menu
+- ✅ All contact links point to stevenstucker@gmail.com
+- ✅ No HubSpot chat widget or unnecessary tracking scripts
+- ✅ Fast loading times with minimal dependencies
+- ✅ Identical visual appearance to original Webflow design
 
 ## Setup
-The site is configured to run on port 5000 using Python's built-in HTTP server:
+The site runs on port 5000 using Python's built-in HTTP server:
 ```
 python -m http.server 5000
 ```
 
 ## Recent Changes
-- **2025-10-28**: Initial import from GitHub and Replit environment setup
-  - Installed Python 3.11
-  - Configured workflow to serve static files on port 5000
-  - Added project documentation
+- **2025-10-28**: Complete website rebuild
+  - Created clean CSS file (styles.css) replacing 15,612 lines of Webflow CSS
+  - Rebuilt all HTML pages with semantic markup
+  - Removed all Webflow data attributes and overhead
+  - Updated contact buttons to mailto:stevenstucker@gmail.com
+  - Removed HubSpot chat widget
+  - Removed Facebook Pixel, Google Tag Manager, and Google Ads tracking
+  - Kept only essential Google Analytics
+  - Added mobile menu functionality
+  - Tested and verified all pages working correctly
+
+## Contact Information
+All contact links and forms now point to: **stevenstucker@gmail.com**
 
 ## Deployment
-This is a static site that can be deployed to any static hosting service or CDN. The deployment configuration uses Python's HTTP server to serve the files.
+This static site can be deployed to any static hosting service, CDN, or web server. The deployment configuration uses Python's HTTP server to serve the files in development.
+
+## Design System
+The site uses a clean design system with:
+- **Colors**: Primary blue (#4a3aff), dark blue (#281ca5), and semantic color tokens
+- **Typography**: Merriweather for headings, Open Sans for body text
+- **Spacing**: Consistent spacing scale (0.5rem to 6rem)
+- **Components**: Reusable button, card, and layout components
+- **Responsive**: Mobile-first design with breakpoints at 768px and 480px
+
+## Browser Support
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
 
 ## Notes
-- One font file (Futura-Bold.otf) failed to download during the Webflow export (see MISSING.txt)
-- The site includes integrations with Google Analytics, Google Tag Manager, Facebook Pixel, HubSpot, and Google Ads
-- The site is production-ready and includes all necessary SEO metadata
+- One font file (Futura-Bold.otf) is missing from the original Webflow export (see MISSING.txt)
+- The site is production-ready with all necessary SEO metadata
+- No external dependencies or frameworks required
+- All images are optimized and served locally
