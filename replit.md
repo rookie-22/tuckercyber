@@ -39,11 +39,22 @@ python -m http.server 5000
 ```
 
 ## Recent Changes
+- **2025-10-29**: Contact form implementation
+  - Created standalone contact form (contact.html) with Cloudflare Turnstile captcha
+  - Added contact form section to bottom of index.html and team.html
+  - Linked "Contact" and "Contact Us" buttons to scroll to contact form (#contact-form)
+  - Removed all mailto: links from buttons and forms
+  - Created contact.css with modern blue gradient styling
+  - Created contact.js with form validation and submission handling
+  - Created functions/api/contact.js for Cloudflare Pages serverless function
+  - Integrated Resend API for email delivery when deployed
+  - Added form success/error message styling
+  - Contact form ready for deployment to Cloudflare Pages
+
 - **2025-10-28**: Complete website rebuild and refinements
   - Created clean CSS file (styles.css) replacing 15,612 lines of Webflow CSS
   - Rebuilt all HTML pages with semantic markup
   - Removed all Webflow data attributes and overhead
-  - Updated contact buttons to mailto:stevenstucker@gmail.com
   - Removed HubSpot chat widget
   - Removed Facebook Pixel, Google Tag Manager, and Google Ads tracking
   - Kept only essential Google Analytics
@@ -52,8 +63,8 @@ python -m http.server 5000
   - Replaced FORTINET and SANS Institute logos with Stanford University logo
   - Applied color correction to all team photos (reduced overexposure)
   - Resized all logos to 64px height for consistency
-  - Reorganized logo strip into 3-4 logos per row in specific order
-  - Removed ™ from "Meet TUCKER Cybersecurity" heading
+  - Reorganized logo strip: Row 1 (Deloitte, AT&T, Apple, Atari, Sony, Honeywell), Row 2 (Stanford, Berkeley Law, Harvard, Georgia Tech, Clemson, Charlotte)
+  - Removed ™ trademark symbols from headings
   - Made myths/misconceptions section more compact with black text
   - Fixed responsive layout on team page - Steve Tucker photo now stacks below text on mobile
   - Tested and verified all pages working correctly across desktop and mobile
