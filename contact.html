@@ -1,141 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Contact | TUCKER Cybersecurity</title>
-  <meta name="description" content="Reach out to TuckerCybersecurity to assist with your AI-powered cybersecurity solutions.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Open Graph / Social -->
-  <meta property="og:title" content="Contact | TUCKER Cybersecurity">
-  <meta property="og:description" content="Reach out to TuckerCybersecurity to assist with your AI-powered cybersecurity solutions.">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  
-  <!-- Favicon -->
-  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
-  <link href="images/webclip.png" rel="apple-touch-icon">
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
-  
-  <!-- Styles -->
-  <link href="css/styles.css" rel="stylesheet">
-  
-  <!-- Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J98NBJ5EDC"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-J98NBJ5EDC');
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Tucker Cyber Security</title>
+  <link rel="stylesheet" href="css/contact.css">
+  <!-- Cloudflare Turnstile -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="navbar-container">
-      <a href="index.html" class="navbar-logo">
-        <img src="images/Frame-3365.png" alt="Tucker Cybersecurity Logo">
-      </a>
-      <div class="navbar-menu">
-        <a href="team.html" class="navbar-link">Team</a>
-        <div class="navbar-buttons">
-          <button class="secondary-button">Contact</button>
-        </div>
-      </div>
-      <button class="menu-toggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- Contact Section -->
-  <section class="contact-section">
-    <div class="contact-container">
-      <div class="contact-info">
-        <h1 class="heading-h2-size" style="text-align: left;">Contact us</h1>
-        <p class="default-paragraph" style="margin: 2rem 0;">
-          Businesses and their owners are at a high risk of data breach, cyber crime and other Cybersecurity Threats that can destroy your business and reputation.<br><br>
-          We create a simple, secure, and resilient solution to keep your business secure.
-        </p>
-        
-        <div class="contact-item">
-          <img src="images/email.png" alt="Email icon">
-          <span>stevenstucker@gmail.com</span>
-        </div>
-        
-        <div class="contact-item">
-          <img src="images/linkedin.png" alt="LinkedIn icon">
-          <a href="https://www.linkedin.com/company/tuckercybersecurity" target="_blank">@ TUCKERCybersecurity</a>
-        </div>
-      </div>
+  <div class="container">
+    <div class="contact-wrapper">
+      <h1>Contact Us</h1>
+      <p class="subtitle">Have a question or need cyber security assistance? Send us a message!</p>
       
-      <div class="contact-form">
-        <form>
-          <div class="form-field">
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" name="first-name" placeholder="Your first name" required>
-          </div>
-          
-          <div class="form-field">
-            <label for="last-name">Last Name</label>
-            <input type="text" id="last-name" name="last-name" placeholder="Your last name" required>
-          </div>
-          
-          <div class="form-field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="your@company.com" required>
-          </div>
-          
-          <div class="form-field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Type your message..." required></textarea>
-          </div>
-          
-          <div class="form-field">
-            <label style="display: flex; align-items: start; gap: 0.5rem; font-weight: normal; cursor: pointer;">
-              <input type="checkbox" required style="margin-top: 0.25rem;">
-              <span style="font-size: 0.875rem;">You agree to our friendly privacy policy</span>
-            </label>
-          </div>
-          
-          <button type="submit" class="primary-button" style="width: 100%; margin-top: 1rem;">Submit</button>
-        </form>
-      </div>
-    </div>
-  </section>
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            required 
+            placeholder="Your name"
+          >
+        </div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-logo">
-        <a href="index.html">
-          <img src="images/Frame-3365.png" alt="Tucker Cybersecurity Logo">
-        </a>
-      </div>
-      <div class="footer-text">
-        We Manage Your AI-Powered Cybersecurity, So You Can Focus on Your Business.<br>
-        <span style="font-size: 0.875rem; opacity: 0.8;">Our services are exclusively for IT cybersecurity and do not extend to Operational Technology (OT) or Cyber Physical client environments.</span>
-      </div>
-      <div class="footer-social">
-        <a href="https://www.linkedin.com/company/tuckercybersecurity" target="_blank" aria-label="LinkedIn">
-          <img src="images/linkedin.png" alt="LinkedIn">
-        </a>
-        <img src="images/email.png" alt="Email">
-      </div>
-    </div>
-  </footer>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required 
+            placeholder="your.email@example.com"
+          >
+        </div>
 
-  <script>
-    // Mobile menu toggle
-    document.querySelector('.menu-toggle').addEventListener('click', function() {
-      document.querySelector('.navbar-menu').classList.toggle('active');
-    });
-  </script>
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea 
+            id="message" 
+            name="message" 
+            rows="6" 
+            required 
+            placeholder="Tell us how we can help..."
+          ></textarea>
+        </div>
+
+        <!-- Cloudflare Turnstile Widget -->
+        <div class="form-group">
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAAB9O1vW8jECFvSVz"></div>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submitBtn">
+          <span class="btn-text">Send Message</span>
+          <span class="btn-loader" style="display: none;">Sending...</span>
+        </button>
+
+        <div id="formMessage" class="form-message"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/contact.js"></script>
 </body>
 </html>
