@@ -329,11 +329,17 @@
         </a>
         <img src="images/email.png" alt="Email">
       </div>
+      <div class="footer-copyright">
+        &copy; <span id="copyright-year"></span> Tucker Cybersecurity. All rights reserved.
+      </div>
     </div>
   </footer>
 
   <script src="js/contact.js"></script>
   <script>
+    // Auto-update copyright year
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    
     // Mobile menu toggle
     document.querySelector('.menu-toggle').addEventListener('click', function() {
       document.querySelector('.navbar-menu').classList.toggle('active');
