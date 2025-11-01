@@ -39,6 +39,11 @@ python -m http.server 5000
 ```
 
 ## Recent Changes
+- **2025-11-01**: Updates and deployment preparation
+  - Removed Clara Del Villar from team page
+  - Added auto-updating copyright year to footer (updates automatically on Jan 1st each year)
+  - Prepared site for deployment to Cloudflare Pages or Replit
+
 - **2025-10-29**: Contact form implementation
   - Created standalone contact form (contact.html) with Cloudflare Turnstile captcha
   - Added contact form section to bottom of index.html and team.html
